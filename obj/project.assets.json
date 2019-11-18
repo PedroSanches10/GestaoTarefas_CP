@@ -5255,11 +5255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
       "projectName": "GestaoTarefas_CP",
-      "projectPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
+      "projectPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP\\obj\\",
+      "outputPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
