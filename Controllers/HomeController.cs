@@ -23,7 +23,12 @@ namespace GestaoTarefas_CP.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Instituto()
+        {
+            return View();
+        }
+
+        public IActionResult Contactos()
         {
             return View();
         }
