@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPG - Politécnico Guarda</title>
 
-
     <environment>
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     </environment>
@@ -28,7 +27,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GestaoTarefas_CP</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logotipo_ipg.jpg" width="286" height="81">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,17 +51,24 @@
             </div>
         </nav>
     </header>
+
+    <p>&nbsp;</p>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="bg-light py-md-3">
         <div class="container">
-            &copy; 2019 - GestaoTarefas_CP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="small text-center text-muted">
+                Programação para a Internet 2019
+                <p> Trabalho desenvolvido por: Carina Tomé • João Torres • Pedro Sanches</p>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
