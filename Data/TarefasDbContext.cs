@@ -13,4 +13,6 @@ using GestaoTarefas_CP.Models;
         }
 
         public DbSet<GestaoTarefas_CP.Models.Professor> Professor { get; set; }
+
+        public DbSet<GestaoTarefas_CP.Models.Funcionario> Funcionario { get; set; }
     }
