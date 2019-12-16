@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -35,6 +35,9 @@ namespace GestaoTarefas_CP
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<TarefasDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("TarefasDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
