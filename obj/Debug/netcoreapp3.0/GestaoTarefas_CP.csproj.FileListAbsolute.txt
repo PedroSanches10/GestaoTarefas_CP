@@ -135,6 +135,7 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoT
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Instituto.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Contactos.cshtml.g.cs
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -329,3 +330,5 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 =======
 >>>>>>> parent of d3431bb... Crud do Professor
 >>>>>>> parent of 6d7036a... CRUD Funcionarios e Migração
+=======
+>>>>>>> parent of d3431bb... Crud do Professor
