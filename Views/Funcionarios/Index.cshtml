@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar Novo Funcionário</a>
 </p>
 <table class="table">
     <thead>
@@ -61,9 +61,9 @@
                 @Html.DisplayFor(modelItem => item.NIF)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.FuncionarioId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
             </td>
         </tr>
 }

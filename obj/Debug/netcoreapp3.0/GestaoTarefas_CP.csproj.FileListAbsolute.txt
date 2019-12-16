@@ -130,8 +130,6 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\ru\Micr
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Instituto.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Contactos.cshtml.g.cs
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -647,3 +645,8 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Details.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Edit.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Index.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.core.dll
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cache
