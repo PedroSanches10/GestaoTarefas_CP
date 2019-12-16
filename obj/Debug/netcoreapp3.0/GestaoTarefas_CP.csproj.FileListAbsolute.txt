@@ -296,7 +296,6 @@ C:\Users\Carin\Source\Repos\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Details.cshtml.g.cs
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Edit.cshtml.g.cs
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Index.cshtml.g.cs
-<<<<<<< HEAD
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -329,5 +328,4 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Index.cshtml.g.cs
 =======
 >>>>>>> parent of d3431bb... Crud do Professor
-=======
 >>>>>>> parent of 6d7036a... CRUD Funcionarios e Migração

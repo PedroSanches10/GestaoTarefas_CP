@@ -1,9 +1,5 @@
 {
   "version": 1,
-<<<<<<< HEAD
   "dgSpecHash": "LNrULrQAG5hzDMNiGkTQNfoxAWbLvqibfoMdmgGKvLRS2RGCFkwdc3Z+7qqE36BdSlGIegjTMuqHn4gmu9ryCA==",
-=======
-  "dgSpecHash": "9zFAH9Kkee/KTEWpG/NebYLEqEfRMV5kXu3zG8/PBWHKG7oB5NdJno7uJi8tet6gcPhq+u5lEilJba0Cnl9tzw==",
->>>>>>> parent of 6d7036a... CRUD Funcionarios e Migração
   "success": true
 }
