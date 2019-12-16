@@ -134,6 +134,7 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoT
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Instituto.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Home\Contactos.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\Carin\Source\Repos\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -325,3 +326,5 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Details.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Edit.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Index.cshtml.g.cs
+=======
+>>>>>>> parent of d3431bb... Crud do Professor

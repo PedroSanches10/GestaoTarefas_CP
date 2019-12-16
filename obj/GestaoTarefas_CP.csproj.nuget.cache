@@ -1,5 +1,9 @@
 {
   "version": 1,
+<<<<<<< HEAD
   "dgSpecHash": "fnTRoH6hEhEb4VUYiaruc0Nl1ASQF+EMlYElshTxCzTgyHt4Of5OKbS0WfxhLH4Acj8FOZZnvSIe2mKDZJ1yBQ==",
+=======
+  "dgSpecHash": "LNrULrQAG5hzDMNiGkTQNfoxAWbLvqibfoMdmgGKvLRS2RGCFkwdc3Z+7qqE36BdSlGIegjTMuqHn4gmu9ryCA==",
+>>>>>>> parent of d3431bb... Crud do Professor
   "success": true
 }
