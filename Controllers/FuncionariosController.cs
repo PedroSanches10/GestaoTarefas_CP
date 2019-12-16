@@ -11,12 +11,13 @@ namespace GestaoTarefas_CP.Views.Funcionarios
 {
     public class FuncionariosController : Controller
     {
+        public int PageSize = 4;
         private readonly TarefasDbContext _context;
 
         public FuncionariosController(TarefasDbContext context)
         {
             _context = context;
-        }
+        } 
 
         // GET: Funcionarios
         public async Task<IActionResult> Index()
