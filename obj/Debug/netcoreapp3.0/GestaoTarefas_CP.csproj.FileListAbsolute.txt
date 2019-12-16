@@ -481,3 +481,5 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Details.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Edit.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Professors\Index.cshtml.g.cs
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.dll
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.pdb
