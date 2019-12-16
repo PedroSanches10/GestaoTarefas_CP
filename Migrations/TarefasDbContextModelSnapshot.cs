@@ -17,42 +17,6 @@ namespace GestaoTarefas_CP.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("GestaoTarefas_CP.Models.Funcionario", b =>
-                {
-                    b.Property<int>("FuncionarioId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CodPostal")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Morada")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NIF")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome_Funcionario")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Numero_Funcionario")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Telemovel")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("FuncionarioId");
-
-                    b.ToTable("Funcionario");
-                });
-
             modelBuilder.Entity("GestaoTarefas_CP.Models.Professor", b =>
                 {
                     b.Property<string>("ProfessorId")
