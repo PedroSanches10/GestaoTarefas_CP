@@ -642,3 +642,8 @@ C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoT
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.RazorTargetAssemblyInfo.cs
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.Views.pdb
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csproj.CopyComplete
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Create.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Delete.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Details.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Edit.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Index.cshtml.g.cs
