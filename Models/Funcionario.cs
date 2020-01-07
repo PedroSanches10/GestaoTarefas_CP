@@ -26,8 +26,9 @@ namespace GestaoTarefas_CP.Models
         [Required(ErrorMessage = "Introduza a morada")]
         public string Morada { get; set; }
 
-        [Required(ErrorMessage = "Introduza o E-mail")]
+        [Required]
         [Display(Name = "E-mail")]
+        [RegularExpression(@"^([\w-\.]+)@((\[[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{2,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{2,3})(\]?)$", ErrorMessage = "E-mail inválido")]
         public string Email { get; set; }
 
         [RegularExpression(@"(2\d{8})|(9[1236]\d{7})", ErrorMessage = "Telemóvel inválido")]
