@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GestaoTarefas_CP.Models;
+using GestaoTarefas_CP.Models.ViewModels;
 
 namespace GestaoTarefas_CP.Views.Funcionarios
 {
@@ -17,12 +18,40 @@ namespace GestaoTarefas_CP.Views.Funcionarios
         public FuncionariosController(TarefasDbContext context)
         {
             _context = context;
-        } 
+        }
 
         // GET: Funcionarios
-        public async Task<IActionResult> Index()
+        public IActionResult Index(int page = 1, string searchString = null)
         {
-            return View(await _context.Funcionario.ToListAsync());
+            var Funcionario = from p in _context.Funcionario
+                              select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Funcionario = Funcionario.Where(p => p.Nome.Contains(searchString));
+            }
+
+            decimal nFuncionarios = Funcionario.Count();
+            int nPage = ((int)nFuncionarios / PageSize);
+
+            if (nFuncionarios % PageSize == 0)
+            {
+                nPage = 1;
+            }
+
+            FuncionarioViewModel vm = new FuncionarioViewModel
+            {
+                Funcionarios = Funcionario
+                .OrderBy(p => p.Nome)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize),
+                CurrentPage = page,
+                FirstPage = Math.Max(1, page - nPage),
+                TotalPages = (int)Math.Ceiling(nFuncionarios / PageSize)
+            };
+
+            vm.LastPage = Math.Min(vm.TotalPages, page + nPage);
+            vm.StringSearch = searchString;
+            return View(vm);
         }
 
         // GET: Funcionarios/Details/5
@@ -43,8 +72,8 @@ namespace GestaoTarefas_CP.Views.Funcionarios
             return View(funcionario);
         }
 
-        // GET: Funcionarios/Create
-        public IActionResult Create()
+            // GET: Funcionarios/Create
+            public IActionResult Create()
         {
             return View();
         }
