@@ -6,17 +6,14 @@
 
 <h1>Index</h1>
 
+@using (Html.BeginForm()) {
 <p>
-    <a asp-action="Create">Criar Novo Funcionário</a>
+    <div>
+        <a class="btn btn-primary btn-sm" asp-action="Create">Novo Funcionário</a>
+        <input type="text" name="searchString" value="@Model.StringSearch" placeholder=" Insira o nome" />
+        <button type="submit" class="btn btn-primary btn-sm" asp-action="Index" asp-route-page="1" asp-route-searchString="@Model.StringSearch">Procurar</button>
+    </div>
 </p>
-
-@using (Html.BeginForm())
-{
-    <p>
-        Nome: <input type="text" name="searchString" value="@Model.StringSearch" placeholder="Procurar por nome" />
-        <button type="submit" class="btn btn-light" asp-action="Index" asp-route-page="1" asp-route-searchString="@Model.StringSearch">Procurar</button>
-        <a asp-action="Index" class="btn btn-info">Lista inteira</a>
-    </p>
 }
 
 <table class="table">
