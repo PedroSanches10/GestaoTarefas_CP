@@ -649,3 +649,4 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.c
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache

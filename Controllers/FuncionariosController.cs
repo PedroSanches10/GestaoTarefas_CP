@@ -12,7 +12,7 @@ namespace GestaoTarefas_CP.Views.Funcionarios
 {
     public class FuncionariosController : Controller
     {
-        public int PageSize = 4;
+        public int PageSize = 3;
         private readonly TarefasDbContext _context;
 
         public FuncionariosController(TarefasDbContext context)

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GestaoTarefas_CP.Models.Funcionario>
+﻿@model GestaoTarefas_CP.Models.ViewModels.FuncionarioViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,63 +9,89 @@
 <p>
     <a asp-action="Create">Criar Novo Funcionário</a>
 </p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Nome: <input type="text" name="searchString" value="@Model.StringSearch" placeholder="Procurar por nome" />
+        <button type="submit" class="btn btn-light" asp-action="Index" asp-route-page="1" asp-route-searchString="@Model.StringSearch">Procurar</button>
+        <a asp-action="Index" class="btn btn-info">Lista inteira</a>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                Nome
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Numero)
+                Numero
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cargo)
+                Cargo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Morada)
+                Morada
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                Email
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telemovel)
+                Telemovel
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NIF)
+                NIF
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Numero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cargo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Morada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telemovel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NIF)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
-            </td>
-        </tr>
-}
+
+        @foreach (var item in Model.Funcionarios)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cargo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Morada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telemovel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NIF)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+@if (Model.TotalPages > 1)
+{
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+
+        @if (i == Model.CurrentPage){
+            <a href="#" class="btn btn-primary">@i</a>
+        }
+        else{
+            <a asp-action="Index" asp-route-page="@i" class="btn btn-primary">@i</a>
+        }
+    }
+}

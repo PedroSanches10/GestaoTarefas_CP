@@ -13,6 +13,8 @@ namespace GestaoTarefas_CP.Models
         public int FuncionarioId { get; set; }
 
         [Required(ErrorMessage ="Introduza o nome")]
+        [StringLength(20, MinimumLength = 3)]
+
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Introduza o número")]
@@ -28,7 +30,8 @@ namespace GestaoTarefas_CP.Models
 
         [Required]
         [Display(Name = "E-mail")]
-        [RegularExpression(@"^([\w-\.]+)@((\[[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{2,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{2,3})(\]?)$", ErrorMessage = "E-mail inválido")]
+        [EmailAddress]
+        /*[RegularExpression(@"^([\w-\.]+)@((\[[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{2,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{2,3})(\]?)$", ErrorMessage = "E-mail inválido")] */
         public string Email { get; set; }
 
         [RegularExpression(@"(2\d{8})|(9[1236]\d{7})", ErrorMessage = "Telemóvel inválido")]
@@ -39,6 +42,5 @@ namespace GestaoTarefas_CP.Models
         [RegularExpression(@"\d{9}", ErrorMessage = "Número de Contribuinte Incorreto")]
         [Display(Name = "Número Contribuinte")]
         public string NIF { get; set; }
-
     }
 }
