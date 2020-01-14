@@ -17,6 +17,29 @@ namespace GestaoTarefas_CP.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("GestaoTarefas_CP.Models.Cargo", b =>
+                {
+                    b.Property<int>("CargoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Escola_Cargo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome_Cargo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CargoId");
+
+                    b.HasIndex("FuncionarioId");
+
+                    b.ToTable("Cargo");
+                });
+
             modelBuilder.Entity("GestaoTarefas_CP.Models.Funcionario", b =>
                 {
                     b.Property<int>("FuncionarioId")
@@ -24,22 +47,25 @@ namespace GestaoTarefas_CP.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Cargo")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Morada")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NIF")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("Numero")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telemovel")
@@ -52,18 +78,46 @@ namespace GestaoTarefas_CP.Migrations
 
             modelBuilder.Entity("GestaoTarefas_CP.Models.Professor", b =>
                 {
-                    b.Property<string>("ProfessorId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("ProfessorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Contacto")
+                    b.Property<string>("Disciplina")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gabinete")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(3)")
+                        .HasMaxLength(3);
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
+
+                    b.Property<string>("Telemovel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(9)")
+                        .HasMaxLength(9);
 
                     b.HasKey("ProfessorId");
 
                     b.ToTable("Professor");
+                });
+
+            modelBuilder.Entity("GestaoTarefas_CP.Models.Cargo", b =>
+                {
+                    b.HasOne("GestaoTarefas_CP.Models.Funcionario", "Funcionario")
+                        .WithMany("Cargos")
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
