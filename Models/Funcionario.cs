@@ -23,7 +23,7 @@ namespace GestaoTarefas_CP.Models
         public string Numero { get; set; }
 
         [Required(ErrorMessage ="Selecione o cargo ocupado")]
-        public string Cargo { get; set; }
+        public ICollection<Cargo> Cargos { get; set; }
 
         [Required(ErrorMessage = "Introduza a morada")]
         public string Morada { get; set; }
@@ -42,5 +42,6 @@ namespace GestaoTarefas_CP.Models
         [RegularExpression(@"\d{9}", ErrorMessage = "Número de Contribuinte Incorreto")]
         [Display(Name = "Número Contribuinte")]
         public string NIF { get; set; }
+
     }
 }
