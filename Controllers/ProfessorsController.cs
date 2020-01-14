@@ -53,7 +53,7 @@ namespace GestaoTarefas_CP.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProfessorId,Nome,Contacto")] Professor professor)
+        public async Task<IActionResult> Create([Bind("ProfessorId,Nome,Telemovel,Email,Gabinete,Disciplina")] Professor professor)
         {
             if (ModelState.IsValid)
             {
