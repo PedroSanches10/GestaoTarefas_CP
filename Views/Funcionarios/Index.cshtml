@@ -20,13 +20,16 @@
     <thead>
         <tr>
             <th>
+                ID
+            </th>
+            <th>
                 Nome
             </th>
             <th>
                 Numero
             </th>
             <th>
-                Cargo
+                Escola
             </th>
             <th>
                 Morada
@@ -47,34 +50,37 @@
 
         @foreach (var item in Model.Funcionarios)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Numero)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cargos)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Morada)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Telemovel)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NIF)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuncionarioId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Escola)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Morada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telemovel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NIF)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>

@@ -23,7 +23,7 @@ namespace GestaoTarefas_CP.Models
         public string Numero { get; set; }
 
         [Required(ErrorMessage ="Selecione o cargo ocupado")]
-        public ICollection<Cargo> Cargos { get; set; }
+        public string Escola { get; set; }
 
         [Required(ErrorMessage = "Introduza a morada")]
         public string Morada { get; set; }
