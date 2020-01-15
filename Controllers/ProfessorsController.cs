@@ -31,7 +31,8 @@ namespace GestaoTarefas_CP.Controllers
             {
                 return NotFound();
             }
-
+     
+         
             var professor = await _context.Professor
                 .FirstOrDefaultAsync(m => m.ProfessorId == id);
             if (professor == null)
@@ -65,7 +66,7 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Professors/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
             {
@@ -136,7 +137,7 @@ namespace GestaoTarefas_CP.Controllers
         // POST: Professors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var professor = await _context.Professor.FindAsync(id);
             _context.Professor.Remove(professor);
