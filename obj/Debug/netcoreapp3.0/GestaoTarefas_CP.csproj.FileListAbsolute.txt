@@ -663,3 +663,8 @@ C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Cargos\Create.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Cargos\Delete.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Cargos\Details.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Cargos\Edit.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Cargos\Index.cshtml.g.cs
