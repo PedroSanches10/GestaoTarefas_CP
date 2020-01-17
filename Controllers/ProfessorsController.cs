@@ -19,8 +19,16 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Professors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+
+            var professor = from s in _context.Professor
+                            select s;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                professor = professor.Where(s => s.Nome.Contains(searchString));
+            }
             return View(await _context.Professor.ToListAsync());
         }
 
