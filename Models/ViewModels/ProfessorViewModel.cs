@@ -15,6 +15,6 @@ namespace GestaoTarefas_CP.Models.ViewModels
 
         public int Primeira_Pagina { get; set; }
         public int Ultima_Pagina { get; set; }
-        public int SearchString { get; set; }
+        public string SearchString { get; set; }
     }
 }

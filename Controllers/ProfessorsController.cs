@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GestaoTarefas_CP.Models;
+using GestaoTarefas_CP.Models.ViewModels;
 
 namespace GestaoTarefas_CP.Controllers
 {
     public class ProfessorsController : Controller
     {
+        public int Tamanho_Pagina = 3;
         private readonly TarefasDbContext _context;
 
         public ProfessorsController(TarefasDbContext context)
@@ -19,7 +21,7 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Professors
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString = null, int pagina = 1)
         {
 
             var professor = from s in _context.Professor
@@ -29,7 +31,30 @@ namespace GestaoTarefas_CP.Controllers
             {
                 professor = professor.Where(s => s.Nome.Contains(searchString));
             }
-            return View(await _context.Professor.ToListAsync());
+
+            decimal nProfessores = Professor.Count();
+            int nPagina = ((int)nProfessores / Tamanho_Pagina);
+
+            if(nProfessores % Tamanho_Pagina == 0)
+            {
+                nPagina = 1;
+            }
+
+            ProfessorViewModel vm = new ProfessorViewModel
+            {
+                Professores = professor
+                .OrderBy(p => p.Nome)
+                .Skip((pagina - 1) * Tamanho_Pagina)
+                .Take(Tamanho_Pagina),
+                Pagina_Atual = pagina,
+                Primeira_Pagina = Math.Max(1, pagina - nPagina),
+                Total_Paginas = (int)Math.Ceiling(nProfessores / Tamanho_Pagina)
+            };
+
+            vm.Ultima_Pagina = Math.Min(vm.Total_Paginas, pagina + nPagina);
+            vm.SearchString = searchString;
+            return View(vm);
+
         }
 
         // GET: Professors/Details/5
