@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GestaoTarefas_CP.Models;
 using GestaoTarefas_CP.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GestaoTarefas_CP.Controllers
 {
+    [Authorize(Policy = "CanManageGestaoTarefas_CP")]
+    [Authorize(Roles = "cari")]
+
     public class ProfessorsController : Controller
     {
         public int Tamanho_Pagina = 3;

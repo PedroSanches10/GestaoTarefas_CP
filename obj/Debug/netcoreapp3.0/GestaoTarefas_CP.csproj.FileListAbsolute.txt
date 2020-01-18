@@ -648,7 +648,6 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.c
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Create.cshtml.g.cs
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Delete.cshtml.g.cs
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Funcionarios\Details.cshtml.g.cs
@@ -657,3 +656,4 @@ C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache

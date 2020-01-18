@@ -17,29 +17,6 @@ namespace GestaoTarefas_CP.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("GestaoTarefas_CP.Models.Cargo", b =>
-                {
-                    b.Property<int>("CargoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Escola_Cargo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("FuncionarioId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nome_Cargo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CargoId");
-
-                    b.HasIndex("FuncionarioId");
-
-                    b.ToTable("Cargo");
-                });
-
             modelBuilder.Entity("GestaoTarefas_CP.Models.Funcionario", b =>
                 {
                     b.Property<int>("FuncionarioId")
@@ -48,6 +25,10 @@ namespace GestaoTarefas_CP.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Escola")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -109,15 +90,6 @@ namespace GestaoTarefas_CP.Migrations
                     b.HasKey("ProfessorId");
 
                     b.ToTable("Professor");
-                });
-
-            modelBuilder.Entity("GestaoTarefas_CP.Models.Cargo", b =>
-                {
-                    b.HasOne("GestaoTarefas_CP.Models.Funcionario", "Funcionario")
-                        .WithMany("Cargos")
-                        .HasForeignKey("FuncionarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
