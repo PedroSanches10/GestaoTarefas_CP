@@ -22,7 +22,7 @@ namespace GestaoTarefas_CP.Models
         [Display(Name = "Número")]
         public string Numero { get; set; }
 
-        [Required(ErrorMessage ="Selecione o cargo ocupado")]
+        [Required(ErrorMessage ="Selecione a escola")]
         public string Escola { get; set; }
 
         [Required(ErrorMessage = "Introduza a morada")]

@@ -12,7 +12,7 @@
         <a class="btn btn-primary btn-sm" asp-action="Create">Novo Funcionário</a>
         <input type="text" name="searchString" value="@Model.StringSearch" placeholder=" Insira o nome" />
         <button type="submit" class="btn btn-primary btn-sm" asp-action="Index" asp-route-page="1" asp-route-searchString="@Model.StringSearch">Procurar</button>
-        <a asp-action="Index" class="btn btn-info">Lista completa</a>
+        <a asp-action="Index" class="btn btn-primary btn-sm">Lista completa</a>
     </div>
 </p>
 }

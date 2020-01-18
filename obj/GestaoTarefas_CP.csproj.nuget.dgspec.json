@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carin\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj": {}
+    "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carin\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj": {
+    "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carin\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
         "projectName": "GestaoTarefas_CP",
-        "projectPath": "C:\\Users\\Carin\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
-        "packagesPath": "C:\\Users\\Carin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carin\\Documents\\GitHub\\GestaoTarefas_CP\\obj\\",
+        "projectPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\GestaoTarefas_CP.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pedro\\Documents\\GitHub\\GestaoTarefas_CP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Carin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -93,24 +92,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.2, 3.0.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -119,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
