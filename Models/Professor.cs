@@ -11,7 +11,7 @@ namespace GestaoTarefas_CP.Models
 
         public int ProfessorId { get; set; }
 
-        [Required(ErrorMessage = "Insera um nome")]
+        [Required(ErrorMessage = "Insira um nome")]
         [StringLength(30, MinimumLength = 4)]
         public string Nome { get; set; }
 
@@ -31,9 +31,10 @@ namespace GestaoTarefas_CP.Models
         [Required]
         public string Disciplina { get; set; }
 
-        internal static decimal Count()
+         /* internal static decimal Count()
         {
             throw new NotImplementedException();
         }
+        */
     }
 }

@@ -21,34 +21,34 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Professors
-        public async Task<IActionResult> Index(string searchString = null, int pagina = 1)
+        public IActionResult Index(int pagina = 1, string searchString = null)
         {
 
-            var professor = from s in _context.Professor
+            var Professor = from s in _context.Professor
                             select s;
 
             if(!String.IsNullOrEmpty(searchString))
             {
-                professor = professor.Where(s => s.Nome.Contains(searchString));
+                Professor = Professor.Where(s => s.Nome.Contains(searchString));
             }
 
-            decimal nProfessores = Professor.Count();
-            int nPagina = ((int)nProfessores / Tamanho_Pagina);
+            decimal nProfessors = Professor.Count();
+            int nPagina = ((int)nProfessors / Tamanho_Pagina);
 
-            if(nProfessores % Tamanho_Pagina == 0)
+            if(nProfessors % Tamanho_Pagina == 0)
             {
                 nPagina = 1;
             }
 
             ProfessorViewModel vm = new ProfessorViewModel
             {
-                Professores = professor
-                .OrderBy(p => p.Nome)
+                Professors = Professor
+                .OrderBy(s => s.Nome)
                 .Skip((pagina - 1) * Tamanho_Pagina)
                 .Take(Tamanho_Pagina),
                 Pagina_Atual = pagina,
                 Primeira_Pagina = Math.Max(1, pagina - nPagina),
-                Total_Paginas = (int)Math.Ceiling(nProfessores / Tamanho_Pagina)
+                Total_Paginas = (int)Math.Ceiling(nProfessors / Tamanho_Pagina)
             };
 
             vm.Ultima_Pagina = Math.Min(vm.Total_Paginas, pagina + nPagina);
@@ -58,7 +58,7 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Professors/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -119,7 +119,7 @@ namespace GestaoTarefas_CP.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProfessorId,Nome,Contacto")] Professor professor)
+        public async Task<IActionResult> Edit(int id, [Bind("ProfessorId,Nome,Telemovel,Email,Gabinete,Disciplina")] Professor professor)
         {
             if (id != professor.ProfessorId)
             {

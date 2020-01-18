@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GestaoTarefas_CP.Models.Professor>
+﻿@model GestaoTarefas_CP.Models.ViewModels.ProfessorViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -11,67 +11,82 @@
     <div class="form-actions no-color">
         <p>
             <a class="btn btn-primary btn-sm" asp-action="Create">Novo Professor</a>
-            Professor: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
-            <input type="submit" value="Procurar" class="btn btn-default" /> |
-            <a asp-action="Index" class="btn btn-info">Lista Completa de Professores</a>
+            Procurar: <input type="text" name="SearchString" value="@Model.SearchString" place-holder="Professor"/>
+            
+            <a asp-action="Index" class="btn btn-primary btn-sm">Lista Completa de Professores</a>
         </p>
     </div>
 </form>
 
 <table class="table">
-    <table class="table">
-        <thead>
+    <thead>
+        <tr>
+            <th>
+                ProfessorId
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Telemovel
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Gabinete
+            </th>
+            <th>
+                Disciplina
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Professors)
+        {
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProfessorId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Telemovel)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Gabinete)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Disciplina)
-                </th>
-                <th></th>
+                >
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfessorId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telemovel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gabinete)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disciplina)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ProfessorId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ProfessorId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ProfessorId">Delete</a>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    >
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ProfessorId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Telemovel)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Gabinete)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Disciplina)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.ProfessorId">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.ProfessorId">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.ProfessorId">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
+
+@if (Model.Total_Paginas > 1)
+{
+    @for (int i = 1; i <= Model.Total_Paginas; i++)
+    {
+
+        @if (i == Model.Pagina_Atual)
+        {
+            <a href="#" class="btn btn-primary">@i</a>
+        }
+        else
+        {
+            <a asp-action="Index" asp-route-page="@i" class="btn btn-primary">@i</a>
+        }
+    }
+}
