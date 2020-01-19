@@ -1,4 +1,4 @@
-﻿@model GestaoTarefas_CP.Models.ViewModels.ProfessorViewModel
+﻿@model GestaoTarefas_CP.Models.ViewModels.EscolaViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -22,59 +22,29 @@
     <thead>
         <tr>
             <th>
-                ProfessorId
+                Escolad
             </th>
             <th>
                 Nome
-            </th>
-            <th>
-                Telemovel
-            </th>
-            <th>
-                Email
-            </th>
-            <th>
-                Gabinete
-            </th>
-            <th>
-                Disciplina
-            </th>
-            <th>
-                Escola
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Professors)
+        @foreach (var item in Model.Escolas)
         {
             <tr>
                 >
                 <td>
-                    @Html.DisplayFor(modelItem => item.ProfessorId)
+                    @Html.DisplayFor(modelItem => item.EscolaId)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
+                    @Html.DisplayFor(modelItem => item.NomeEscola)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Telemovel)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Gabinete)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Disciplina)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Escola)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.ProfessorId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ProfessorId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ProfessorId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.EscolaId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.EscolaId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.EscolaId">Delete</a>
                 </td>
             </tr>
         }
