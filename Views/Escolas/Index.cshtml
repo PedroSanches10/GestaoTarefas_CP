@@ -1,14 +1,16 @@
-﻿@model GestaoTarefas_CP.Models.ViewModels.EscolaViewModel
+﻿@model GestaoTarefas_CP.Models.ViewModels.ProfessorViewModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Professores</h1>
+
 
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
-        <p>            
+        <p>
+            <a class="btn btn-primary btn-sm" asp-action="Create">Novo Professor</a>
             Procurar: <input type="text" name="SearchString" value="@Model.SearchString" place-holder="Professor" />
 
             <a asp-action="Index" class="btn btn-primary btn-sm">Lista Completa de Professores</a>
@@ -20,22 +22,59 @@
     <thead>
         <tr>
             <th>
-                NomeEscola
+                ProfessorId
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Telemovel
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Gabinete
+            </th>
+            <th>
+                Disciplina
+            </th>
+            <th>
+                Escola
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Escolas)
+        @foreach (var item in Model.Professors)
         {
             <tr>
+                >
                 <td>
-                    @Html.DisplayFor(modelItem => item.NomeEscola)
+                    @Html.DisplayFor(modelItem => item.ProfessorId)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.EscolaId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.EscolaId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.EscolaId">Delete</a>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telemovel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gabinete)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disciplina)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escola)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ProfessorId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ProfessorId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ProfessorId">Delete</a>
                 </td>
             </tr>
         }
