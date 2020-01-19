@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GestaoTarefas_CP.Models;
+using GestaoTarefas_CP.Models.ViewModels;
 
 namespace GestaoTarefas_CP.Controllers
 {
     public class EscolasController : Controller
     {
+        public int Tamanho_Pagina = 3;
         private readonly TarefasDbContext _context;
 
         public EscolasController(TarefasDbContext context)
@@ -19,9 +21,40 @@ namespace GestaoTarefas_CP.Controllers
         }
 
         // GET: Escolas
-        public async Task<IActionResult> Index()
+        public IActionResult Index(int pagina = 1, string searchString = null)
         {
-            return View(await _context.Escola.ToListAsync());
+
+            var Escola = from s in _context.Escola
+                            select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Escola = Escola.Where(s => s.NomeEscola.Contains(searchString));
+            }
+
+            decimal nEscolas = Escola.Count();
+            int nPagina = ((int)nEscolas / Tamanho_Pagina);
+
+            if (nEscolas % Tamanho_Pagina == 0)
+            {
+                nPagina = 1;
+            }
+
+            EscolaViewModel vm = new EscolaViewModel
+            {
+                Escolas = Escola
+                .OrderBy(s => s.NomeEscola)
+                .Skip((pagina - 1) * Tamanho_Pagina)
+                .Take(Tamanho_Pagina),
+                Pagina_Atual = pagina,
+                Primeira_Pagina = Math.Max(1, pagina - nPagina),
+                Total_Paginas = (int)Math.Ceiling(nEscolas / Tamanho_Pagina)
+            };
+
+            vm.Ultima_Pagina = Math.Min(vm.Total_Paginas, pagina + nPagina);
+            vm.SearchString = searchString;
+            return View(vm);
+
         }
 
         // GET: Escolas/Details/5
