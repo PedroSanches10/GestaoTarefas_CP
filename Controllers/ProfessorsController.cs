@@ -123,7 +123,7 @@ namespace GestaoTarefas_CP.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProfessorId,Nome,Telemovel,Email,Gabinete,Disciplina")] Professor professor)
+        public async Task<IActionResult> Edit(int id, [Bind("ProfessorId,Nome,Telemovel,Email,Gabinete,Disciplina,Escola")] Professor professor)
         {
             if (id != professor.ProfessorId)
             {

@@ -16,4 +16,6 @@ public class TarefasDbContext : DbContext
 
     public DbSet<GestaoTarefas_CP.Models.Funcionario> Funcionario { get; set; }
 
+    public DbSet<GestaoTarefas_CP.Models.Escola> Escola { get; set; }
+
 }

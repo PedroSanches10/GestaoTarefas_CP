@@ -657,3 +657,9 @@ C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.a
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Create.cshtml.g.cs
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Delete.cshtml.g.cs
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Details.cshtml.g.cs
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Edit.cshtml.g.cs
+C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Index.cshtml.g.cs

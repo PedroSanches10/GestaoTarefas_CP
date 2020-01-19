@@ -30,11 +30,9 @@ namespace GestaoTarefas_CP.Models
 
         [Required]
         public string Disciplina { get; set; }
+        
+        public string Escola { get; set; }
 
-         /* internal static decimal Count()
-        {
-            throw new NotImplementedException();
-        }
-        */
+        
     }
 }
