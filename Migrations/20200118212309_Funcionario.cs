@@ -12,12 +12,5 @@ namespace GestaoTarefas_CP.Migrations
                 nullable: false,
                 defaultValue: "");
         }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropColumn(
-                name: "Escola",
-                table: "Funcionario");
-        }
     }
 }

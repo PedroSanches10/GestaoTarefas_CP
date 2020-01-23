@@ -656,7 +656,6 @@ C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\V
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
-C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Create.cshtml.g.cs
 C:\Users\Carin\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Escolas\Delete.cshtml.g.cs
@@ -707,3 +706,4 @@ C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\A
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Pedro\Documents\GitHub\GestaoTarefas_CP\obj\Debug\netcoreapp3.0\GestaoTarefas_CP.csprojAssemblyReference.cache

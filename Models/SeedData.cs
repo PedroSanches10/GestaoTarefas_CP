@@ -22,13 +22,11 @@ namespace GestaoTarefas_CP.Models
             {
                 if (db.Professor.Any()) return;
 
-
-
                 db.Professor.AddRange(
-                    new Professor { Nome = "Professor", Telemovel="914009710", Email="pedrosanches10@gmail.com", Gabinete="32", Disciplina="Gestão",Escola="ESTG"},
-                    new Professor { Nome = "Professor", Telemovel = "914009710", Email = "pedrosanches10@gmail.com", Gabinete = "32", Disciplina = "Gestão", Escola = "ESTG" },
-                    new Professor { Nome = "Professor", Telemovel = "914009710", Email = "pedrosanches10@gmail.com", Gabinete = "32", Disciplina = "Gestão", Escola = "ESTG" },
-                    new Professor { Nome = "Professor", Telemovel = "914009710", Email = "pedrosanches10@gmail.com", Gabinete = "32", Disciplina = "Gestão", Escola = "ESTG" }
+                    new Professor { Nome = "Anabela Tavares", Telemovel = "963004726", Email = "belatav@gmail.com", Gabinete = "22", Disciplina = "Contabilidade", Escola = "ESTG" },
+                    new Professor { Nome = "Carina Sofia", Telemovel = "914009710", Email = "ca.sofia@gmail.com", Gabinete = "48", Disciplina = "Desporto", Escola = "ESECD" },
+                    new Professor { Nome = "Pedro Carvalho", Telemovel = "932586941", Email = "pedcarv@gmail.com", Gabinete = "30", Disciplina = "Programação", Escola = "ESTG" },
+                    new Professor { Nome = "Luis Alexandre", Telemovel = "938523698", Email = "al.luis@gmail.com", Gabinete = "2", Disciplina = "turismo", Escola = "ESTH" }
                 );
             db.SaveChanges();
             }
